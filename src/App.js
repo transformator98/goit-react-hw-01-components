@@ -9,13 +9,15 @@ export default function App() {
   return (
     <div className={s.container}>
       <ProfileList profiles={profiles} />
-      <Section>
+    </div>
+  );
+}
+{
+  /* <Section>
         <Statistic
           key={statistics.id}
           label={statistics.label}
           percentage={statistics.percentage}
         />
-      </Section>
-    </div>
-  );
+      </Section> */
 }
