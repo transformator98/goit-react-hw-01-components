@@ -1,35 +1,13 @@
 [
   {
-  "name": "Ivan Polovynka",
-  "tag": "polovynkaivan",
-  "location": "Krementschuk, Ukraine",
-  "avatar": "https://cdn1.radikalno.ru/uploads/2020/11/26/5aa3669f8e65283da926a4688388c293-full.jpg",
-  "stats": {
-    "followers": 1525,
-    "views": 4827,
-    "likes": 1308
+    "name": "Ivan Polovynka",
+    "tag": "polovynkaivan",
+    "location": "Krementschuk, Ukraine",
+    "avatar": "https://cdn1.radikalno.ru/uploads/2020/11/26/5aa3669f8e65283da926a4688388c293-full.jpg",
+    "stats": {
+      "followers": 1525,
+      "views": 4827,
+      "likes": 1308
+    }
   }
-},
-{
-  "name": "Jacques Gluke",
-  "tag": "jgluke",
-  "location": "Ocho Rios, Jamaica",
-  "avatar": "https://www.flaticon.com/svg/static/icons/svg/3784/3784184.svg",
-  "stats": {
-    "followers": 5603,
-    "views": 4827,
-    "likes": 1308
-  }
-},
-{
-  "name": "Mango Juse",
-  "tag": "jmango",
-  "location": "California, USA",
-  "avatar": "https://www.flaticon.com/svg/static/icons/svg/3784/3784184.svg",
-  "stats": {
-    "followers": 15603,
-    "views": 8827,
-    "likes": 2308
-  }
-}
 ]
