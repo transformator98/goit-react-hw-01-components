@@ -11,9 +11,9 @@ import s from './components/Profile/Profile.module.css';
 export default function App() {
   return (
     <div className={s.container}>
-      {/* <ProfileList profiles={profiles} /> */}
-      {/* <Section title="Upload stats" stats={statistics} /> */}
-      {/* <FriendList friends={friends} /> */}
+      <ProfileList profiles={profiles} />
+      <Section title="Upload stats" stats={statistics} />
+      <FriendList friends={friends} />
       <TransactionHistory items={transactions} />
     </div>
   );
