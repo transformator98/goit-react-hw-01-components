@@ -14,5 +14,6 @@ function Section({ title, stats }) {
 
 Section.propTypes = {
   title: PropTypes.string,
+  stats: PropTypes.arrayOf(PropTypes.shape()),
 };
 export default Section;

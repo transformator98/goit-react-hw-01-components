@@ -9,7 +9,7 @@ export default function Statistics({ stats }) {
     <ul className={s.stat}>
       {stats.map(item => (
         <StatisticList
-          key={item.key}
+          key={item.id}
           label={item.label}
           percentage={item.percentage}
           color={randomColor()}
@@ -22,7 +22,7 @@ export default function Statistics({ stats }) {
 Statistics.propTypes = {
   stats: PropTypes.arrayOf(
     PropTypes.shape({
-      key: PropTypes.string.isRequired,
+      id: PropTypes.string.isRequired,
     }),
   ),
 };
