@@ -6,7 +6,7 @@
   box-shadow: 1px 1px 4px 1px #000000;
   padding: 10px;
 }
-li:not(:last-child) {
+.item:not(:last-child) {
   margin-bottom: 10px;
 }
 
