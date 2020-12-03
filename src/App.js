@@ -1,7 +1,6 @@
 import TransactionHistory from './components/TransactionHistory';
 import ProfileList from './components/Profile/ProfileList';
 import Section from './components/Section/Section';
-import Statistics from './components/Statistics/Statistics';
 import FriendList from './components/FriendList/FriendList';
 import transactions from './transactions.json';
 import profiles from './user.json';
@@ -13,9 +12,7 @@ export default function App() {
   return (
     <div className={s.container}>
       <ProfileList profiles={profiles} />
-      <Section title="Upload stats">
-        <Statistics stats={statistics} />
-      </Section>
+      <Section title="Upload stats" stats={statistics} />
       <FriendList friends={friends} />
       <TransactionHistory items={transactions} />
     </div>

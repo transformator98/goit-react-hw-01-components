@@ -1,11 +1,13 @@
 import PropTypes from 'prop-types';
+import Statistics from '../Statistics/Statistics';
+
 import s from './Section.module.css';
 
-function Section({ title, children }) {
+function Section({ title, stats }) {
   return (
     <section className={s.statistics}>
       {title && <h2 className={s.title}>{title}</h2>}
-      {children}
+      <Statistics stats={stats} />
     </section>
   );
 }
