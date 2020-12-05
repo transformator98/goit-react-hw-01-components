@@ -1,17 +1,28 @@
 import PropTypes from 'prop-types';
-import s from './Statistics.module.css';
+import StatisticList from './StatisticsListItem';
+import randomColor from '../../services/randomHexColor';
 
-export default function StatisticList({ label, percentage, color }) {
+import s from './StatisticsList.module.css';
+
+export default function Statistics({ stats }) {
   return (
-    <li className={s.item} style={{ backgroundColor: `${color}` }}>
-      <span className={s.label}>{label}</span>
-      <span className={s.percentage}>{percentage}%</span>
-    </li>
+    <ul className={s.stat}>
+      {stats.map(item => (
+        <StatisticList
+          key={item.id}
+          label={item.label}
+          percentage={item.percentage}
+          color={randomColor()}
+        />
+      ))}
+    </ul>
   );
 }
 
-StatisticList.propTypes = {
-  label: PropTypes.string,
-  percentages: PropTypes.number,
-  color: PropTypes.string,
+Statistics.propTypes = {
+  stats: PropTypes.arrayOf(
+    PropTypes.shape({
+      id: PropTypes.string.isRequired,
+    }),
+  ),
 };
