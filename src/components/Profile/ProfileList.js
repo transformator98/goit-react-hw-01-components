@@ -1,9 +1,10 @@
 import Profile from './Profile';
 import PropTypes from 'prop-types';
+import s from './ProfileList.module.css';
 
 function ProfileList({ profiles }) {
   return (
-    <ul>
+    <ul className={s.profileList}>
       {profiles.map(profile => (
         <li key={profile.tag}>
           <Profile
